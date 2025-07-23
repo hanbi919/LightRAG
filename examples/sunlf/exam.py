@@ -11,12 +11,10 @@ import asyncio
 from lightrag import LightRAG, QueryParam
 from lightrag.llm.openai import gpt_4o_mini_complete, gpt_4o_complete, openai_embed
 from lightrag.kg.shared_storage import initialize_pipeline_status
-from lightrag.utils import setup_logger,logger, set_verbose_debug
+from lightrag.utils import setup_logger, logger, set_verbose_debug
 import logging
 import logging.config
-WORKING_DIR = "./rundata"
-
-setup_logger("lightrag", level="INFO")
+WORKING_DIR = "./exam"
 
 
 async def llm_model_func(
@@ -97,18 +95,19 @@ async def main():
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
-        with open("./result.txt", "r", encoding="utf-8") as f:
-            await rag.ainsert(f.read(),file_paths="我的知识库")
-       
+        with open("./exam.txt", "r", encoding="utf-8") as f:
+            await rag.ainsert(f.read(), file_paths="我的知识库")
+        question = "如何办理残疾人证?"
         # question = "残疾人证迁移有几个业务办理项?"
+        # _user_prompt = ""
+        _user_prompt = "回答内容简练，不需要描述信息和参考资料信息。请直接输出最终答案，不要包含推理过程或特殊标记"
         # question = "我现在想去外地工作，残疾人证需要什么材料?"
         # question = "我现在想去外地工作，残疾人证需要填写属地变更申请表吗?"
         # question = "我现在想去外地工作，残疾人证需要咋办?"
         # question = "残疾人证丢了，咋办?"
         # question = "可以办理残疾人证的哪些相关业务?"
         # question = "户口迁移审批需要什么材料?"
-        question = "如何新办一下残疾人证?"
-        _user_prompt = "回答简明扼要，去掉详细信息，不要输出参考资料部分的内容"
+
         # Perform naive search
         print("\n=====================")
         print("Query mode: naive")
@@ -116,42 +115,40 @@ async def main():
         resp = await rag.aquery(
             question,
             param=QueryParam(mode="naive", stream=True,
-                             user_prompt=_user_prompt),
+                             user_prompt=_user_prompt)
         )
-        # if inspect.isasyncgen(resp):
-        #     await print_stream(resp)
-        # else:
-        #     print(resp)
+        if inspect.isasyncgen(resp):
+            await print_stream(resp)
+        else:
+            print(resp)
 
         # Perform local search
-        # print("\n=====================")
-        # print("Query mode: local")
-        # print("=====================")
-        # resp = await rag.aquery(
-        #     question,
-        #     param=QueryParam(mode="local", stream=True,
-        #                      user_prompt=_user_prompt),
-        # )
-        # if inspect.isasyncgen(resp):
-        #     await print_stream(resp)
-        # else:
-        #     print(resp)
+        print("\n=====================")
+        print("Query mode: local")
+        print("=====================")
+        resp = await rag.aquery(
+            question,
+            param=QueryParam(mode="local", stream=True,
+                             user_prompt=_user_prompt),
+        )
+        if inspect.isasyncgen(resp):
+            await print_stream(resp)
+        else:
+            print(resp)
 
         # Perform global search
-        # print("\n=====================")
-        # print("Query mode: global")
-        # print("=====================")
-        # resp = await rag.aquery(
-        #     question,
-        #     param=QueryParam(mode="global", stream=True,
-        #                      user_prompt=_user_prompt),
-        # )
-        # if inspect.isasyncgen(resp):
-        #     await print_stream(resp)
-        # else:
-        #     print(resp)
-
-        
+        print("\n=====================")
+        print("Query mode: global")
+        print("=====================")
+        resp = await rag.aquery(
+            question,
+            param=QueryParam(mode="global", stream=True,
+                             user_prompt=_user_prompt),
+        )
+        if inspect.isasyncgen(resp):
+            await print_stream(resp)
+        else:
+            print(resp)
 
         # Perform hybrid search
         print("\n=====================")
@@ -167,7 +164,7 @@ async def main():
         else:
             print(resp)
 
-        # Perform mix search
+        # Perform hybrid search
         print("\n=====================")
         print("Query mode: mix")
         print("=====================")
@@ -254,6 +251,7 @@ def configure_logging():
     logger.setLevel(logging.INFO)
     # Enable verbose debug if needed
     set_verbose_debug(os.getenv("VERBOSE_DEBUG", "false").lower() == "true")
+
 
 if __name__ == "__main__":
     # Configure logging before running the main function
