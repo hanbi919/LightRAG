@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="残疾人证迁移">
+      <data key="d0">残疾人证迁移</data>
+      <data key="d1">event</data>
+      <data key="d2">残疾人证迁移是指残疾人证从一个地区迁移到另一个地区的行政流程。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="户籍地申请">
+      <data key="d0">户籍地申请</data>
+      <data key="d1">category</data>
+      <data key="d2">户籍地申请是残疾人证迁移过程中，申请人向其户籍所在地提交相关材料和申请的过程。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="居住地申请">
+      <data key="d0">居住地申请</data>
+      <data key="d1">category</data>
+      <data key="d2">居住地申请是残疾人证迁移过程中，申请人向其实际居住地提交相关材料和申请的过程。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="户籍簿">
+      <data key="d0">户籍簿</data>
+      <data key="d1">document</data>
+      <data key="d2">户籍簿是一种记录居民户籍信息的官方文件。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="残疾人证">
+      <data key="d0">残疾人证</data>
+      <data key="d1">document</data>
+      <data key="d2">残疾人证是证明个人残疾状况的官方文件。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="证件照">
+      <data key="d0">证件照</data>
+      <data key="d1">document</data>
+      <data key="d2">证件照是用于官方文件和个人身份识别的照片。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="属地变更申请表">
+      <data key="d0">属地变更申请表</data>
+      <data key="d1">document</data>
+      <data key="d2">属地变更申请表是用于申请更改个人所属行政区划的表格。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="居民身份证">
+      <data key="d0">居民身份证</data>
+      <data key="d1">document</data>
+      <data key="d2">居民身份证是中国公民的身份证明文件。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <node id="居住证">
+      <data key="d0">居住证</data>
+      <data key="d1">document</data>
+      <data key="d2">居住证是证明个人在某地合法居住的官方文件。</data>
+      <data key="d3">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d4">我的知识库</data>
+      <data key="d5">1753235289</data>
+    </node>
+    <edge source="残疾人证迁移" target="户籍地申请">
+      <data key="d6">8.0</data>
+      <data key="d7">残疾人证迁移过程中的户籍地申请是其中的一个步骤，涉及提交户籍簿、残疾人证等文件。</data>
+      <data key="d8">文件提交,行政流程</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235289</data>
+    </edge>
+    <edge source="残疾人证迁移" target="居住地申请">
+      <data key="d6">8.0</data>
+      <data key="d7">残疾人证迁移过程中的居住地申请是另一个步骤，涉及提交居住证、残疾人证等文件。</data>
+      <data key="d8">文件提交,行政流程</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235289</data>
+    </edge>
+    <edge source="残疾人证迁移" target="属地变更申请表">
+      <data key="d6">8.0</data>
+      <data key="d7">属地变更申请表是在残疾人证迁移过程中所需填写的表格之一。</data>
+      <data key="d8">文件提交,表格填写</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+    <edge source="户籍地申请" target="户籍簿">
+      <data key="d6">9.0</data>
+      <data key="d7">户籍地申请过程中需要提交户籍簿作为证明文件。</data>
+      <data key="d8">文件提交,证明</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235289</data>
+    </edge>
+    <edge source="户籍地申请" target="残疾人证">
+      <data key="d6">9.0</data>
+      <data key="d7">户籍地申请过程中需要提交残疾人证作为证明文件。</data>
+      <data key="d8">文件提交,证明</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+    <edge source="户籍地申请" target="居民身份证">
+      <data key="d6">7.0</data>
+      <data key="d7">户籍地申请过程中可能需要提交居民身份证以验证个人身份。</data>
+      <data key="d8">文件提交,身份验证</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+    <edge source="居住地申请" target="居住证">
+      <data key="d6">9.0</data>
+      <data key="d7">居住地申请过程中需要提交居住证作为证明文件。</data>
+      <data key="d8">文件提交,证明</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+    <edge source="居住地申请" target="残疾人证">
+      <data key="d6">9.0</data>
+      <data key="d7">居住地申请过程中也需要提交残疾人证作为证明文件。</data>
+      <data key="d8">文件提交,证明</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+    <edge source="居住地申请" target="居民身份证">
+      <data key="d6">7.0</data>
+      <data key="d7">居住地申请过程中可能需要提交居民身份证以验证个人身份。</data>
+      <data key="d8">文件提交,身份验证</data>
+      <data key="d9">chunk-ee3ed9912de72c9ce9b18558fb6860fd</data>
+      <data key="d10">我的知识库</data>
+      <data key="d11">1753235290</data>
+    </edge>
+  </graph>
+</graphml>

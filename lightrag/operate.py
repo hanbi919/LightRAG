@@ -50,7 +50,7 @@ load_dotenv(dotenv_path=".env", override=False)
 def chunking_by_token_size(
     tokenizer: Tokenizer,
     content: str,
-    split_by_character: str | None = None,
+    split_by_character: str | None = None,  # 按指定字符将内容分割成原始块
     split_by_character_only: bool = False,
     overlap_token_size: int = 128,
     max_token_size: int = 1024,
@@ -1304,6 +1304,7 @@ async def extract_entities(
     text_chunks_storage: BaseKVStorage | None = None,
 ) -> list:
     use_llm_func: callable = global_config["llm_model_func"]
+    # 设置提取过程的最大迭代次数
     entity_extract_max_gleaning = global_config["entity_extract_max_gleaning"]
 
     ordered_chunks = list(chunks.items())

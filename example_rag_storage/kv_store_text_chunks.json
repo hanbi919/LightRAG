@@ -1,0 +1,16 @@
+{
+  "chunk-4d48c33588f0feace6ba10b7b79e1822": {
+    "tokens": 115,
+    "content": "苹果公司（Apple Inc.）是一家美国跨国科技公司，总部位于加利福尼亚州库比蒂诺。\n史蒂夫·乔布斯是苹果公司的联合创始人之一，他在1976年与史蒂夫·沃兹尼亚克和罗纳德·韦恩共同创立了该公司。\n苹果公司开发了多款知名产品，包括iPhone智能手机、iPad平板电脑和Mac个人电脑。\n蒂姆·库克目前担任苹果公司的首席执行官。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-4d48c33588f0feace6ba10b7b79e1822",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e1b6b1839ce1fa958cefe01c229a1694",
+      "default:extract:9a449b221a39c1293c529d3eafc1ac6d"
+    ],
+    "create_time": 1753339510,
+    "update_time": 1753339551,
+    "_id": "chunk-4d48c33588f0feace6ba10b7b79e1822"
+  }
+}

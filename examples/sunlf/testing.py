@@ -14,7 +14,7 @@ from lightrag.kg.shared_storage import initialize_pipeline_status
 from lightrag.utils import setup_logger, logger, set_verbose_debug
 import logging
 import logging.config
-WORKING_DIR = "./exam"
+WORKING_DIR = "./testing"
 
 
 async def llm_model_func(
@@ -95,7 +95,7 @@ async def main():
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
 
-        with open("./examples/sunlf/exam.txt", "r", encoding="utf-8") as f:
+        with open("./examples/sunlf/testing.csv", "r", encoding="utf-8") as f:
             await rag.ainsert(f.read(), file_paths="我的知识库")
         question = "如何办理残疾人证?"
         # question = "残疾人证迁移有几个业务办理项?"

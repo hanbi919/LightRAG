@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="苹果公司">
+      <data key="d0">苹果公司</data>
+      <data key="d1">organization</data>
+      <data key="d2">苹果公司是一家美国跨国科技公司，总部位于加利福尼亚州库比蒂诺，开发了多款知名产品如iPhone、iPad和Mac。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339551</data>
+    </node>
+    <node id="史蒂夫·乔布斯">
+      <data key="d0">史蒂夫·乔布斯</data>
+      <data key="d1">person</data>
+      <data key="d2">史蒂夫·乔布斯是苹果公司的联合创始人之一，于1976年与他人共同创立了该公司。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339551</data>
+    </node>
+    <node id="史蒂夫·沃兹尼亚克">
+      <data key="d0">史蒂夫·沃兹尼亚克</data>
+      <data key="d1">person</data>
+      <data key="d2">史蒂夫·沃兹尼亚克是苹果公司的联合创始人之一，于1976年与他人共同创立了该公司。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339551</data>
+    </node>
+    <node id="罗纳德·韦恩">
+      <data key="d0">罗纳德·韦恩</data>
+      <data key="d1">person</data>
+      <data key="d2">罗纳德·韦恩是苹果公司的联合创始人之一，于1976年与他人共同创立了该公司。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339551</data>
+    </node>
+    <node id="蒂姆·库克">
+      <data key="d0">蒂姆·库克</data>
+      <data key="d1">person</data>
+      <data key="d2">蒂姆·库克目前担任苹果公司的首席执行官。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339551</data>
+    </node>
+    <node id="iPhone">
+      <data key="d0">iPhone</data>
+      <data key="d1">category</data>
+      <data key="d2">iPhone是一款由苹果公司开发的智能手机。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339553</data>
+    </node>
+    <node id="iPad">
+      <data key="d0">iPad</data>
+      <data key="d1">category</data>
+      <data key="d2">iPad是一款由苹果公司开发的平板电脑。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339553</data>
+    </node>
+    <node id="Mac">
+      <data key="d0">Mac</data>
+      <data key="d1">category</data>
+      <data key="d2">Mac是一款由苹果公司开发的个人电脑。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339553</data>
+    </node>
+    <node id="加利福尼亚州库比蒂诺">
+      <data key="d0">加利福尼亚州库比蒂诺</data>
+      <data key="d1">geo</data>
+      <data key="d2">加利福尼亚州库比蒂诺是苹果公司的总部所在地。</data>
+      <data key="d3">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1753339553</data>
+    </node>
+    <edge source="苹果公司" target="史蒂夫·乔布斯">
+      <data key="d6">9.0</data>
+      <data key="d7">史蒂夫·乔布斯是苹果公司的联合创始人之一。</data>
+      <data key="d8">创始人关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339553</data>
+    </edge>
+    <edge source="苹果公司" target="史蒂夫·沃兹尼亚克">
+      <data key="d6">9.0</data>
+      <data key="d7">史蒂夫·沃兹尼亚克是苹果公司的联合创始人之一。</data>
+      <data key="d8">创始人关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="罗纳德·韦恩">
+      <data key="d6">9.0</data>
+      <data key="d7">罗纳德·韦恩是苹果公司的联合创始人之一。</data>
+      <data key="d8">创始人关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="蒂姆·库克">
+      <data key="d6">10.0</data>
+      <data key="d7">蒂姆·库克担任苹果公司的首席执行官。</data>
+      <data key="d8">领导关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="iPhone">
+      <data key="d6">8.0</data>
+      <data key="d7">苹果公司开发了iPhone智能手机。</data>
+      <data key="d8">产品开发</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="iPad">
+      <data key="d6">8.0</data>
+      <data key="d7">苹果公司开发了iPad平板电脑。</data>
+      <data key="d8">产品开发</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="Mac">
+      <data key="d6">8.0</data>
+      <data key="d7">苹果公司开发了Mac个人电脑。</data>
+      <data key="d8">产品开发</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="苹果公司" target="加利福尼亚州库比蒂诺">
+      <data key="d6">7.0</data>
+      <data key="d7">苹果公司的总部位于加利福尼亚州库比蒂诺。</data>
+      <data key="d8">地理位置</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339554</data>
+    </edge>
+    <edge source="史蒂夫·乔布斯" target="史蒂夫·沃兹尼亚克">
+      <data key="d6">8.0</data>
+      <data key="d7">史蒂夫·乔布斯和史蒂夫·沃兹尼亚克是苹果公司的联合创始人。</data>
+      <data key="d8">合作关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339555</data>
+    </edge>
+    <edge source="史蒂夫·乔布斯" target="罗纳德·韦恩">
+      <data key="d6">8.0</data>
+      <data key="d7">史蒂夫·乔布斯和罗纳德·韦恩是苹果公司的联合创始人。</data>
+      <data key="d8">合作关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339555</data>
+    </edge>
+    <edge source="史蒂夫·沃兹尼亚克" target="罗纳德·韦恩">
+      <data key="d6">8.0</data>
+      <data key="d7">史蒂夫·沃兹尼亚克和罗纳德·韦恩是苹果公司的联合创始人。</data>
+      <data key="d8">合作关系</data>
+      <data key="d9">chunk-4d48c33588f0feace6ba10b7b79e1822</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1753339555</data>
+    </edge>
+  </graph>
+</graphml>
